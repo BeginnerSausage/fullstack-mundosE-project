@@ -1,4 +1,6 @@
 import React from 'react';
+import left_circle from "../../assets/img/icon-feather-arrow-left-circle.svg";
+import right_circle from "../../assets/img/icon-feather-arrow-right-circle.svg";
 
 const Products = () => {
   return (
@@ -14,15 +16,15 @@ const Products = () => {
             </p>
           </div>
           <div className="products__card-navs">
-            <a className="nav-left"
+            <a className="button-left"
               ><img
-                src="assets/images/icon-feather-arrow-left-circle.svg"
-                alt=""
+                src={left_circle}
+                alt="left"
             /></a>
-            <a className="nav-right"
+            <a className="button-right"
               ><img
-                src="assets/images/icon-feather-arrow-right-circle.svg"
-                alt=""
+                src={right_circle}
+                alt="right"
             /></a>
           </div>
         </div>

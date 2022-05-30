@@ -38,3 +38,13 @@
 .products__cards p {
     font-size: 16px;
 }
+
+.products__cards img{
+    position: relative;
+    left: 300px;
+    padding: 0 5px;
+}
+
+.products__cards a:hover{
+    color: red;
+}

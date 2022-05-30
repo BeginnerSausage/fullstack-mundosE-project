@@ -1,6 +1,365 @@
 @import "./variables";
 
-@include mq(desktop) {
+//---------------------
+//Mobile
+//---------------------
+@include mq(mobile, mobile-max) {
+    .button {
+        padding: 3px 10px;
+        border-color: transparent;
+    }
+
+    header {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+    }
+    header .container {
+        position: fixed;
+        border-bottom: 1px solid #e0752f;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
+        padding: 34px 12px;
+    }
+
+    header .container-active{
+        display: flex;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        border-bottom: 1px solid #e0752f;
+        flex-direction: row;
+        align-items: center;  
+        justify-content: space-between;
+        background-color: #e0752f;
+        padding: 38px 16px;
+    }
+    header nav a{
+        color: #dce1da;
+    }
+
+    header nav{
+        /* position: fixed; */
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        background-color: transparent;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: start;
+        color: white;
+        padding-top: 10em;
+        padding-left: 2em;
+    }
+
+    .hero .slider-nav li{
+        display: inline;
+        font-size: 0;
+    }
+
+    .hero h1{
+        font-size: 18px;
+    }
+
+    .hero p{
+        font-size: 10px;
+    }
+
+    .about {
+        height: 100vh;
+        min-height: 800px;
+    }
+
+    .about-content {
+        border-left: 15px solid $color-primary;
+        padding-left: 60px;
+    }
+
+    .products {
+        height: 100vh;
+        min-height: 800px;
+    }
+
+    .products__content{
+        height: 138px;
+        width: 241px;
+    }
+    .services {
+        height: 100vh;
+        min-height: auto;
+        max-height: 768px;
+    }
+    .card {
+            background-color: #e0752f;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            width: 117px;
+            height: 304px;
+            padding: 76px;
+            color: #ffffff;
+    }
+
+    .accordion-button {
+        color: #5F6368;
+    }
+
+    .accordion-body {
+        color: #5F6368;
+    }
+
+    .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+
+
+    .contact {
+        height: 100vh;
+        min-height: 800px;
+    }
+
+    .contact {
+        background: linear-gradient(90deg, #f2f4f1 80%, #dce1da 20%);
+        padding: 150px 0;
+    }
+
+    .contact h3 {
+        font-size: 39px;
+        font-weight: 600;
+        line-height: 45px;
+        margin-bottom: 50px;
+    }
+
+    .contact span {
+        color: #e0752f;
+    }
+
+    .button {
+        width: 90px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .row {
+        align-items: center;
+    }
+
+    .form-group {
+        margin-bottom: 40px;
+    }
+
+    input,textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 1px #dce1da;
+        border-radius: 0;
+        color: black;
+        padding: 25px 0;
+    }
+
+    input,textarea::placeholder {
+        color: black;
+    }
+
+    input,textarea:focus{
+        background-color: transparent;
+        border-bottom-color: #e0752f;
+        box-shadow: none;
+    }
+}
+
+
+
+
+
+
+//---------------------
+//Tablet
+//---------------------
+
+@include mq(tablet, tablet-max) {
+.button {
+    padding: 7px 20px;
+    border-color: transparent;
+}
+
+header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+header .container {
+    position: fixed;
+    border-bottom: 1px solid #e0752f;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 34px 12px;
+}
+
+header .container-active{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    border-bottom: 1px solid #e0752f;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-between;
+    background-color: #e0752f;
+    padding: 38px 16px;
+}
+header nav a{
+    color: #dce1da;
+}
+
+header nav{
+    /* position: fixed; */
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+    background-color: transparent;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    color: white;
+    padding-top: 6em;
+    padding-left: 1.6em;
+}
+
+.hero .slider-nav li{
+    display: inline;
+    font-size: 0;
+}
+
+.hero h1{
+    font-size: 30px;
+}
+
+.hero p{
+    font-size: 14px;
+}
+
+.about {
+    height: 100vh;
+    min-height: 800px;
+}
+
+.about-content {
+    border-left: 26px solid $color-primary;
+    padding-left: 120px;
+}
+
+.products {
+    height: 100vh;
+    min-height: 800px;
+}
+
+.services {
+    height: 100vh;
+    min-height: auto;
+    max-height: 768px;
+}
+.card {
+        background-color: #e0752f;
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 470px;
+        height: 304px;
+        padding: 50px;
+        color: #ffffff;
+}
+
+.accordion-button {
+    color: #5F6368;
+}
+
+.accordion-body {
+    color: #5F6368;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+
+.contact {
+    height: 100vh;
+    min-height: 800px;
+}
+
+.contact {
+    background: linear-gradient(90deg, #f2f4f1 80%, #dce1da 20%);
+    padding: 150px 0;
+}
+
+.contact h3 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+
+.contact span {
+    color: #e0752f;
+}
+
+.button {
+    width: 144px;
+    height: 48px;
+}
+
+.row {
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+input,textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #dce1da;
+    border-radius: 0;
+    color: black;
+    padding: 25px 0;
+}
+
+input,textarea::placeholder {
+    color: black;
+}
+
+input,textarea:focus{
+    background-color: transparent;
+    border-bottom-color: #e0752f;
+    box-shadow: none;
+}
+}
+
+
+
+
+//---------------------
+//Desktop
+//---------------------
+@include mq(desktop, desktop-max) {
     .button {
         padding: 10px 25px;
         border-color: transparent;
@@ -99,162 +458,7 @@
         border-top-left-radius: 0.25rem;
         border-top-right-radius: 0.25rem;
     }
-
-
-    .contact {
-        height: 100vh;
-        min-height: 800px;
-    }
-
-    .contact {
-        background: linear-gradient(90deg, #f2f4f1 80%, #dce1da 20%);
-        padding: 150px 0;
-    }
-
-    .contact h3 {
-        font-size: 39px;
-        font-weight: 600;
-        line-height: 45px;
-        margin-bottom: 50px;
-    }
-
-    .contact span {
-        color: #e0752f;
-    }
-
-    .button {
-        width: 144px;
-        height: 48px;
-    }
-
-    .row {
-        align-items: center;
-    }
-
-    .form-group {
-        margin-bottom: 40px;
-    }
-
-    input,textarea {
-        background-color: transparent;
-        border: none;
-        border-bottom: solid 1px #dce1da;
-        border-radius: 0;
-        color: black;
-        padding: 25px 0;
-    }
-
-    input,textarea::placeholder {
-        color: black;
-    }
-
-    input,textarea:focus{
-        background-color: transparent;
-        border-bottom-color: #e0752f;
-        box-shadow: none;
-    }
-}
-
-    @include mq(tablet) {
-    .button {
-        padding: 7px 20px;
-        border-color: transparent;
-    }
-
-    header {
-        position: absolute;
-        z-index: 1000;
-        width: 100%;
-    }
-    header .container {
-        position: fixed;
-        border-bottom: 1px solid #e0752f;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: transparent;
-        padding: 34px 12px;
-    }
-
-    header .container-active{
-        display: flex;
-        width: 100%;
-        height: 80px;
-        position: fixed;
-        border-bottom: 1px solid #e0752f;
-        flex-direction: row;
-        align-items: center;  
-        justify-content: space-between;
-        background-color: #e0752f;
-        padding: 38px 16px;
-    }
-    header nav a{
-        color: #dce1da;
-    }
-
-    header nav{
-        /* position: fixed; */
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-        background-color: transparent;
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: row;
-        height: 100vh;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: start;
-        color: white;
-        padding-top: 10em;
-        padding-left: 2em;
-    }
-
-    .hero .slider-nav li{
-        display: inline;
-        font-size: 0;
-    }
-
-    .about {
-        height: 100vh;
-        min-height: 800px;
-    }
-
-    .products {
-        height: 100vh;
-        min-height: 800px;
-    }
-
-    .services {
-        height: 100vh;
-        min-height: auto;
-        max-height: 768px;
-    }
-    .card {
-            background-color: #e0752f;
-            position: relative;
-            right: 0;
-            bottom: 0;
-            width: 470px;
-            height: 304px;
-            padding: 50px;
-            color: #ffffff;
-    }
-
-    .accordion-button {
-        color: #5F6368;
-    }
-
-    .accordion-body {
-        color: #5F6368;
-    }
-
-    .accordion-item:first-of-type .accordion-button {
-        border-top-left-radius: 0.25rem;
-        border-top-right-radius: 0.25rem;
-    }
-
+    
 
     .contact {
         height: 100vh;
@@ -309,3 +513,4 @@
         box-shadow: none;
     }
 }
+

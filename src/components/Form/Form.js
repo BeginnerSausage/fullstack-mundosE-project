@@ -20,7 +20,6 @@ function PostForm() {
         method: 'POST',
         data: userInput
       }).then( result => {
-        console.log(result)
         setShowAlert(true)
         setUserInput({nombre: "", email: "", phone: "", mensaje: ""})
       })
