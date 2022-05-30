@@ -1,0 +1,21 @@
+.about {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.about-content {
+    border-left: 32px solid $color-primary;
+    padding-left: 299px;
+}
+
+.about h2 span{
+    display: block;
+    color: $color-primary;
+}
+
+.about p span {
+    display: block;
+}

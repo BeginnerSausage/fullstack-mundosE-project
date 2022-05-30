@@ -1,0 +1,19 @@
+/* Declaracion de reglas CSS por defecto */
+@import "./default";
+// ----------------------------------------
+@import "./button";
+
+@import "./mixins";
+
+/* Importación de componentes */
+@import "../../components/Header/styles.scss";
+@import "../../components/Home/styles.scss";
+@import "../../components/About/styles.scss";
+@import "../../components/Products/styles.scss";
+@import "../../components/Services/styles.scss";
+@import "../../components/Contact/styles.scss";
+@import "../../components/Footer/styles.scss";
+// ----------------------------------------------
+
+/* Media queries */
+@import "./media";

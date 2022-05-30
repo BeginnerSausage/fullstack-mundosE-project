@@ -1,0 +1,20 @@
+.contact {
+    height: 100vh;
+    min-height: 800px;
+}
+
+.contact {
+    background: linear-gradient(90deg, $color-lighter-gray 80%, $color-gray 20%);
+    padding: 150px 0;
+}
+
+.contact h3 {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+
+.contact span {
+    color: $color-primary;
+}

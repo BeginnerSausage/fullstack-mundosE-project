@@ -1,0 +1,40 @@
+.products{
+    background: linear-gradient(90deg, $color-lighter-gray 75%, $color-gray 25%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.products__content{
+    height: 552px;
+    width: 966px;
+    background-image: url("../../assets/img/section3-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.products__cards {
+    background-color: $color-primary;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 470px;
+    height: 304px;
+    padding: 50px;
+    color: $color-white;
+}
+
+.products__cards h3{
+    font-size: 16px;
+}
+
+.products__cards h2{
+    font-size: 39px;
+}
+
+.products__cards p {
+    font-size: 16px;
+}
