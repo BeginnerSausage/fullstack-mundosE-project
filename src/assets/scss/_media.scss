@@ -9,18 +9,16 @@
         border-color: transparent;
     }
 
-    
+    header {
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+    }
+
     header nav a{
         color: #dce1da;
     }
 
-    header nav{
-        /* position: fixed; */
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-        background-color: transparent;
-    }
 
     .hero {
         display: flex;
@@ -52,6 +50,13 @@
         min-height: 160px;
     }
 
+    .about h1{
+        font-size: 18px;
+    }
+
+    .about p{
+        font-size: 10px
+    }
     .about-content {
         border-left: 15px solid $color-primary;
         padding-left: 60px;
