@@ -16,7 +16,7 @@ function PostForm() {
     const handleSubmit = function (event){
       event.preventDefault()
       axios({
-        url: 'http://127.0.0.1:8000/api/contacto',
+        url: 'https://quiet-spire-49475.herokuapp.com/api/contacto',
         method: 'POST',
         data: userInput
       }).then( result => {
