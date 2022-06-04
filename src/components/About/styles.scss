@@ -6,6 +6,10 @@
     height: 90vh;
 }
 
+.about h1{
+    justify-self: flex-start;
+}
+
 .about-content {
     border-left: 32px solid $color-primary;
     padding-left: 299px;

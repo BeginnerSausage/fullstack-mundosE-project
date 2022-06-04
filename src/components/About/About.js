@@ -1,11 +1,10 @@
 import React from 'react';
 
-
 const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-content">
-        <h2>We Help Businesses <span>Grow and Innovate</span></h2>
+        <h2>We Help Businesses<span>Grow and Innovate</span></h2>
         <p>
           <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut</span> <span>labore et dolore magna aliquyam erat,
