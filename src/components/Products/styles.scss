@@ -7,8 +7,8 @@
 }
 
 .products__content{
-    height: 552px;
-    width: 966px;
+    height: 83vh;
+    width: 84vw;
     background-image: url("../../assets/img/section3-image.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,8 +21,8 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 470px;
-    height: 304px;
+    width: 33vw;
+    height: 46vh;
     padding: 50px;
     color: $color-white;
 }
@@ -41,6 +41,6 @@
 
 .products__cards img{
     position: relative;
-    left: 300px;
+    left: 21vw;
     padding: 0 5px;
 }

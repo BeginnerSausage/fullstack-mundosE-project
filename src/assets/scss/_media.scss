@@ -23,6 +23,7 @@
     .hero {
         display: flex;
         flex-direction: row;
+        background-image: url("../img/slider-1-phone.jpg");
         height: 100vh;
         align-items: center;
         justify-content: flex-start;
@@ -30,6 +31,10 @@
         color: white;
         padding-top: 10em;
         padding-left: 2em;
+    }
+
+    .hero p{
+        padding: 0 30px;
     }
 
     .hero .slider-nav li{
@@ -69,17 +74,53 @@
     }
 
     .products__content{
-        height: 260px;
-        width: 280px;
+        background-image: url("../img/section3-image-phone.jpg");
     }
 
     .products__cards{
-        display: none;
+        width: 45vw;
+        height: 32vh;
+        padding: 20px;
     }
+
+    .products__cards{
+    h3{
+        font-size: 11px;
+    }
+    h2{
+        font-size: 23px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 11px;
+    }
+    }
+
+    .products__cards img{
+        position: relative;
+        left: 23vw;
+        padding: 0 5px;
+    }
+
+
     .services {
         height: 100vh;
+        background-image: url("../img/section4-phone.jpg");
         min-height: auto;
         max-height: 768px;
+    }
+
+    .accordion{
+        width: 250px;
+    }
+
+    .services .accordion .accordion-body {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .services .accordion .accordion-button {
+        color: $font-color;
     }
 
     .card {
@@ -257,6 +298,22 @@ header nav{
 .products {
     height: 100vh;
     min-height: 800px;
+}
+
+.products__content{
+    background-image: url("../img/section3-image-phone.jpg");
+}
+
+.products__cards{
+    width: 45vw;
+    height: 37.5vh;
+    padding: 20px;
+}
+
+.products__cards img{
+    position: relative;
+    left: 29vw;
+    padding: 0 5px;
 }
 
 .services {
