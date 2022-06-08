@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header id="home">
-      <div class="container" className={navbar ? 'container-active' : 'container'}>
+      <div className={navbar ? 'container container-active' : 'container'}>
         <a className="logo" href="#home"
           ><img src={Logo} alt="logo 25Watts"
         /></a>
