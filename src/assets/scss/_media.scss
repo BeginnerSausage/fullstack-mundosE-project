@@ -10,7 +10,7 @@
     }
 
     header {
-        position: absolute;
+        // position: absolute;
         z-index: 1000;
         width: 100%;
     }
@@ -19,8 +19,58 @@
         color: #dce1da;
     }
 
+    header img{
+        padding-left: 1.2vw;
+    }
+    
+    .links{
+        position: absolute;
+        top: -1000px;
+        left: -2000px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        transition: all .4s ease;
+    }
+
+    .links.active {
+        width: 100%;
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 30%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        a{  
+            display: block;
+            color: $color-white;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .initial.active{
+        position: absolute;
+        background-color: $color-black;
+        top: -1000px;
+        left: -1000px;
+        z-index: -1;
+        transition: all .4s ease;
+        &.active{
+            border-radius: 0 0 80% 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
     .hero {
+        position: relative;
+        z-index: -2;
         display: flex;
         flex-direction: row;
         background-image: url("../img/slider-1-phone.jpg");
@@ -223,41 +273,89 @@
 }
 
 header {
-    position: absolute;
+    // position: absolute;
     z-index: 1000;
     width: 100%;
-}
-header .container {
-    position: fixed;
-    border-bottom: 1px solid #e0752f;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: transparent;
-    padding: 34px 12px;
-}
-
-header .container-active{
-    display: flex;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    border-bottom: 1px solid #e0752f;
-    flex-direction: row;
-    align-items: center;  
-    justify-content: space-between;
-    background-color: #e0752f;
-    padding: 38px 16px;
 }
 header nav a{
     color: #dce1da;
 }
 
-header nav{
-    /* position: fixed; */
+header img{
+    padding-left: 1.2vw;
+}
+
+.hero {
+    position: relative;
+    z-index: -2;
+    display: flex;
     flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
-    background-color: transparent;
+    background-image: url("../img/slider-1-phone.jpg");
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+    color: white;
+    padding-top: 10em;
+    padding-left: 2em;
+}
+
+.hero p{
+    padding: 0 30px;
+}
+
+.hero .slider-nav li{
+    display: inline;
+    font-size: 0;
+}
+
+.hero h1{
+    font-size: 18px;
+}
+
+.hero p{
+    font-size: 10px;
+}
+
+.links{
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.links.active {
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    a{
+        color: $color-white;
+        display: block;
+    }
+}
+
+.initial.active{
+    position: absolute;
+    background-color: $color-black;
+    top: -700px;
+    left: -1000px;
+    z-index: -1;
+    transition: all .4s ease;
+    &.active{
+        border-radius: 0 0 80% 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .hero {
@@ -448,6 +546,10 @@ input,textarea:focus{
         padding-bottom: 0;
         padding-right: 20px;
         background-color: transparent;
+    }
+
+    div .nav-icon-5{
+        display: none;
     }
 
     .hero {
