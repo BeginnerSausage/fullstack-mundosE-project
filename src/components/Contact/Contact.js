@@ -17,7 +17,7 @@ const Contact = () => {
           <img
             src={Contact_image}
             alt="Contact"
-            className="d-block w-100"
+            className="d-block w-100 contact-image"
           />
         </div>
       </div>
