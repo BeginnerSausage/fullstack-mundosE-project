@@ -10,12 +10,6 @@
     }
 
     header {
-        // position: fixed;
-        z-index: 1000;
-        width: 100%;
-    }
-
-    header {
         // position: absolute;
         z-index: 1000;
         width: 100%;
@@ -156,6 +150,8 @@
     .products {
         height: 100vh;
         min-height: 160px;
+        position: relative;
+        z-index: -10;
     }
 
     .products__content{
@@ -226,6 +222,10 @@
 
     .accordion-body {
         color: #5F6368;
+    }
+
+    .accordion{
+        z-index: -1;
     }
 
     .accordion-item:first-of-type .accordion-button {
@@ -398,17 +398,20 @@ header img{
 
 .links.active {
     width: 100%;
+    z-index: 2;
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 30vh;
     left: 0;
     right: 0;
     text-align: center;
     a{
-        color: $color-white;
         display: block;
+        color: $color-white;
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 }
 
@@ -417,9 +420,11 @@ header img{
     background-color: $color-black;
     top: -700px;
     left: -1000px;
-    z-index: -1;
+    z-index: 1;
     transition: all .4s ease;
     &.active{
+        position: fixed;
+        z-index: 0;
         border-radius: 0 0 80% 0;
         top: 0;
         left: 0;
@@ -441,6 +446,8 @@ header img{
 .products {
     height: 100vh;
     min-height: 800px;
+    position: relative;
+    z-index: -10;
 }
 
 .products__content{
@@ -463,6 +470,7 @@ header img{
     height: 100vh;
     min-height: auto;
     max-height: 768px;
+    z-index: -10;
 }
 
 .card {
@@ -487,6 +495,10 @@ header img{
 .services .accordion .accordion-button {
     color: $font-color;
     z-index: 0;
+}
+
+.accordion{
+    z-index: -1;
 }
 
 .accordion-item:first-of-type .accordion-button {
@@ -622,6 +634,10 @@ input,textarea:focus{
     .hero .slider-nav li{
         display: inline;
         font-size: 0;
+    }
+
+    .hero .container{
+        padding-left: 73px;
     }
 
     .hero h1{
@@ -798,6 +814,10 @@ input,textarea:focus{
         color: white;
         padding-top: 10em;
         padding-left: 2em;
+    }
+
+    .hero .container{
+        padding-left: 73px;
     }
 
     .hero .slider-nav li{
