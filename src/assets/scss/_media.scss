@@ -15,6 +15,11 @@
         width: 100%;
     }
 
+    header .container{
+        position: relative;
+        z-index: 10;
+    }
+
     header .container-active {
         display: flex;
         width: 100%;
@@ -27,7 +32,7 @@
     }
 
     .container.container-active{
-        z-index: 1;
+        z-index: 10;
     }
 
     header nav a{
@@ -59,6 +64,7 @@
         left: 0;
         right: 0;
         text-align: center;
+        z-index: 10;
         a{  
             display: block;
             color: $color-white;
@@ -72,7 +78,7 @@
         background-color: $color-black;
         top: -1000px;
         left: -1000px;
-        z-index: -1;
+        z-index: 9;
         transition: all .4s ease;
         &.active{
             position: fixed;
@@ -151,7 +157,7 @@
         height: 100vh;
         min-height: 160px;
         position: relative;
-        z-index: -10;
+        z-index: -1;
     }
 
     .products__content{
@@ -195,6 +201,10 @@
         width: 250px;
     }
 
+    .services {
+        position: relative;
+    }
+
     .services .accordion .accordion-body {
         padding: 10px;
         font-size: 11px;
@@ -222,10 +232,6 @@
 
     .accordion-body {
         color: #5F6368;
-    }
-
-    .accordion{
-        z-index: -1;
     }
 
     .accordion-item:first-of-type .accordion-button {
@@ -322,6 +328,11 @@ header {
     width: 100%;
 }
 
+header .container{
+    position: relative;
+    z-index: 10;
+}
+
 header .container-active {
     display: flex;
     width: 100%;
@@ -334,7 +345,7 @@ header .container-active {
 }
 
 .container.container-active{
-    z-index: 1;
+    z-index: 10;
 }
 
 header nav a{
@@ -407,6 +418,7 @@ header img{
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 10;
     a{
         display: block;
         color: $color-white;
@@ -420,11 +432,10 @@ header img{
     background-color: $color-black;
     top: -700px;
     left: -1000px;
-    z-index: 1;
+    z-index: 9;
     transition: all .4s ease;
     &.active{
         position: fixed;
-        z-index: 0;
         border-radius: 0 0 80% 0;
         top: 0;
         left: 0;
@@ -447,7 +458,7 @@ header img{
     height: 100vh;
     min-height: 800px;
     position: relative;
-    z-index: -10;
+    z-index: -1;
 }
 
 .products__content{
@@ -470,7 +481,7 @@ header img{
     height: 100vh;
     min-height: auto;
     max-height: 768px;
-    z-index: -10;
+    position: relative;
 }
 
 .card {
@@ -495,10 +506,6 @@ header img{
 .services .accordion .accordion-button {
     color: $font-color;
     z-index: 0;
-}
-
-.accordion{
-    z-index: -1;
 }
 
 .accordion-item:first-of-type .accordion-button {
